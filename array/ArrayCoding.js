@@ -151,3 +151,14 @@ function kthLargestNumber(arr,k){
 
 }
 console.log(kthLargestNumber([1,2,3,4,5,6],3));
+
+
+// find kth smallest element in an array
+
+function kthSmallestNumber(arr,k){
+    //sort the array in descending order
+    arr.sort((a,b)=>a-b);
+    return arr[k-1];
+
+}
+console.log(kthSmallestNumber([1,2,3,4,5,6],3));
