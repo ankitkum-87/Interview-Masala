@@ -125,3 +125,19 @@ for(let i=0;i<elementArray.length;i++){
     }
 }
 console.log(secondMin,min);
+
+
+//maximum sum subarray
+
+function maximumSubarraySum(arr){
+    let res = arr[0];
+    for(let i=0;i<arr.length;i++){
+        let currSum = 0;
+        for(let j=i;j<arr.length;j++){
+            currSum = currSum+arr[j];
+            res = Math.max(res,currSum);
+        }
+    }
+    return res;
+}
+console.log(maximumSubarraySum([2,3-8,7,1,2,3]));
