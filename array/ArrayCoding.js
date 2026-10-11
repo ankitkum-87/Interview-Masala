@@ -22,3 +22,7 @@ console.log(seen);
 // remove repeating elements
 const removeDuplicates = dupArray.filter(value=>dupArray.indexOf(value)===dupArray.lastIndexOf(value));
 console.log("rm duplicate by filter",removeDuplicates);
+
+// remove unique elements
+const removeUniqueEle = dupArray.filter(value=>dupArray.indexOf(value)!==dupArray.lastIndexOf(value));
+console.log("rm unique by filter",removeUniqueEle);
