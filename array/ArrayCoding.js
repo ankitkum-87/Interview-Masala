@@ -92,3 +92,36 @@ for(let i=0;i<elemArray.length;i++){
     }
 }
 console.log(countObj,"countObj");
+
+
+//secondMax element in an array
+let elementArray = [1,2,3,4,5];
+
+let max=Number.MIN_VALUE;;
+let secondMax = Number.MIN_VALUE;;
+for(let i=0;i<elementArray.length;i++){
+    if(elementArray[i]>max){
+        secondMax = max;
+        max=elementArray[i];
+    }
+    else if(elementArray[i]>secondMax && elementArray[i]!==max){
+        secondMax = elementArray[i];
+    }
+}
+console.log(max,secondMax);
+
+
+
+// second minimum element in the array
+let min = Number.MAX_VALUE;
+let secondMin = Number.MAX_VALUE;
+for(let i=0;i<elementArray.length;i++){
+    if(elementArray[i] < min){
+        secondMin = min;
+        min = elementArray[i];
+    }
+    else if(elementArray[i] < secondMin && elementArray[i]!=min){
+        secondMin = elementArray[i];
+    }
+}
+console.log(secondMin,min);
