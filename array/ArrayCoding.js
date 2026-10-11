@@ -65,3 +65,30 @@ return arr;
 }
 let rightArray = [1,2,3,4,5];  //o/p = [4,5,1,2,3]
 console.log(rightRotate(rightArray,2));
+
+
+// count the occurence of the elements of an array
+
+let elemArray = [1,2,3,2,4,3,5];
+
+let maxEle = Math.max(...elemArray);
+
+let countArray = new Array(maxEle + 1).fill(0);
+for(let i=0;i<elemArray.length;i++){
+    countArray[elemArray[i]]++;
+}
+console.log(countArray);
+
+//second method
+
+let countObj = {};
+for(let i=0;i<elemArray.length;i++){
+    let value = elemArray[i];
+    if(!countObj[value]){
+        countObj[value] =1;
+    }
+    else{
+        countObj[value] +=1;
+    }
+}
+console.log(countObj,"countObj");
