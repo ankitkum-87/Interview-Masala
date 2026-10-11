@@ -50,3 +50,18 @@ return arr;
 }
 let leftArray = [1,2,3,4,5];  //o/p = [3,4,5,1,2]
 console.log(leftRotate(leftArray,2))
+
+
+// right rotate by k elements
+function rightRotate(arr,k){
+for(let i=0;i<k;i++){
+    let last = arr[arr.length-1];
+    for(let k=arr.length-1;k>0;k--){
+        arr[k]=arr[k-1];
+    }
+    arr[0] = last;
+}
+return arr;
+}
+let rightArray = [1,2,3,4,5];  //o/p = [4,5,1,2,3]
+console.log(rightRotate(rightArray,2));
