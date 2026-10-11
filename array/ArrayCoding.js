@@ -162,3 +162,19 @@ function kthSmallestNumber(arr,k){
 
 }
 console.log(kthSmallestNumber([1,2,3,4,5,6],3));
+
+// shift all zeroes to the end of an array
+
+function shiftZeroesAtEnd(arr){
+    for(let i=0;i<arr.length;i++){
+        for(let j=0;j<arr.length-1;j++){
+            if(arr[j]===0 && arr[j+1]!=0){
+                let temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(shiftZeroesAtEnd([1,0,2,3,0,4,0]));
