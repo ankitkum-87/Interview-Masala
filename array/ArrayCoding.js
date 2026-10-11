@@ -194,3 +194,17 @@ function shiftZeroesAtBeginning(arr){
     return arr;
 }
 console.log(shiftZeroesAtBeginning([1,0,2,3,0,4,0]));
+
+
+//traverse 2D Array
+
+let matrix = [[1,2,3],[4,5,6],[7,8,9]];
+
+function traverse2DArray(arr){
+    for(let i=0;i<matrix.length;i++){
+        for(let j=0;j<matrix[i].length;j++){
+            console.log('value',matrix[i][j]);
+        }
+    }
+}
+traverse2DArray(matrix);
