@@ -208,3 +208,17 @@ function traverse2DArray(arr){
     }
 }
 traverse2DArray(matrix);
+
+//sum of all elements of 2d array
+
+function sum2DArrayElements(arr){
+    let totalSum=0;
+    for(let i=0;i<arr.length;i++){
+        for(let j=0;j<arr[i].length;j++){
+           // console.log('value',arr[i][j]);
+            totalSum += arr[i][j];
+        }
+    }
+    console.log(totalSum,'totalSum');
+}
+sum2DArrayElements(matrix);
