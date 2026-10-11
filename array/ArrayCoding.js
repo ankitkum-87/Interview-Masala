@@ -141,3 +141,13 @@ function maximumSubarraySum(arr){
     return res;
 }
 console.log(maximumSubarraySum([2,3-8,7,1,2,3]));
+
+// find kth largest element in an array
+
+function kthLargestNumber(arr,k){
+    //sort the array in descending order
+    arr.sort((a,b)=>b-a);
+    return arr[k-1];
+
+}
+console.log(kthLargestNumber([1,2,3,4,5,6],3));
