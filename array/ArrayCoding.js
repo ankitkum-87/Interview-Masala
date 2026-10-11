@@ -26,3 +26,12 @@ console.log("rm duplicate by filter",removeDuplicates);
 // remove unique elements
 const removeUniqueEle = dupArray.filter(value=>dupArray.indexOf(value)!==dupArray.lastIndexOf(value));
 console.log("rm unique by filter",removeUniqueEle);
+
+
+//check two array is equal or not, element order not matter
+let a=[1,2,3,4];
+let b = [2,4,3,1];
+console.log(a==b);
+
+let data  = a.length===b.length && a.every(value=>b.includes(value));
+console.log(data);
