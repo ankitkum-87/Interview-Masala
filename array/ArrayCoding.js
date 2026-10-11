@@ -35,3 +35,18 @@ console.log(a==b);
 
 let data  = a.length===b.length && a.every(value=>b.includes(value));
 console.log(data);
+
+//  left rotate of an array by k elements
+
+function leftRotate(arr,k){
+for(let i=0;i<k;i++){
+    let first = arr[0];
+    for(let k=0;k<arr.length-1;k++){
+        arr[k]=arr[k+1];
+    }
+    arr[arr.length-1] = first;
+}
+return arr;
+}
+let leftArray = [1,2,3,4,5];  //o/p = [3,4,5,1,2]
+console.log(leftRotate(leftArray,2))
