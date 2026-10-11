@@ -18,3 +18,7 @@ for(let i=0;i<dupArray.length;i++){
     }
 }
 console.log(seen);
+
+// remove repeating elements
+const removeDuplicates = dupArray.filter(value=>dupArray.indexOf(value)===dupArray.lastIndexOf(value));
+console.log("rm duplicate by filter",removeDuplicates);
