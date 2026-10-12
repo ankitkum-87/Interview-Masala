@@ -237,3 +237,23 @@ function findMaximumElements(arr){
 }
 console.log(findMaximumElements(matrix));
 
+// find second largest element in an array
+
+function secondLargestIn2DArray(arr){
+    let largest = Number.MIN_VALUE;
+    let secondLargest = Number.MIN_VALUE;
+    for(let i=0;i<arr.length;i++){
+        for(let j=0;j<arr[i].length;j++){
+            if(arr[j][i] > largest){
+                secondLargest = largest;
+                largest = arr[j][i];
+            }
+            else if(arr[j][i] > secondLargest && arr[j][i] !== largest){
+                secondLargest = arr[j][i];
+            }
+        }
+    }
+    return secondLargest;
+}
+console.log(secondLargestIn2DArray(matrix));
+
