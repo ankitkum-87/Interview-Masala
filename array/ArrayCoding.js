@@ -222,3 +222,18 @@ function sum2DArrayElements(arr){
     console.log(totalSum,'totalSum');
 }
 sum2DArrayElements(matrix);
+
+//find maximum elements in 2d array
+function findMaximumElements(arr){
+    let maximum = Number.MIN_VALUE;
+    for(let i=0;i<arr.length;i++){
+        for(let j=0;j<arr.length;j++){
+            if(arr[i][j] > maximum){
+                maximum = arr[i][j];
+            }
+        }
+    }
+    return maximum;
+}
+console.log(findMaximumElements(matrix));
+
