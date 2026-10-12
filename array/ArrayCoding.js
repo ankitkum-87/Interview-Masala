@@ -281,3 +281,15 @@ function checkAnagramString(str1,str2){
 }
 console.log(checkAnagramString('abcd','dcba'));
 
+//first non repeating character in a string
+function firstNonRepeatingChar(str){
+    for(let i=0;i<str.length;i++){
+        if(str.indexOf(str[i])===str.lastIndexOf(str[i])){
+            return str[i];
+        }
+    }
+}
+console.log(firstNonRepeatingChar('abbacd'));
+
+
+
