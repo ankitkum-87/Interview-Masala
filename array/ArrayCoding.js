@@ -257,3 +257,18 @@ function secondLargestIn2DArray(arr){
 }
 console.log(secondLargestIn2DArray(matrix));
 
+//transpose of a matrix
+function transposeMatrix(arr){
+    console.log(arr);
+    let result = [];
+    for(let i=0;i<arr[0].length;i++){
+        let row=[];
+        for(let j=0;j<arr.length;j++){
+            row.push(arr[j][i]);
+        }
+        result.push(row);
+    }
+    return result;
+}
+console.log(transposeMatrix([[1,2,3],[4,5,6]]));
+
