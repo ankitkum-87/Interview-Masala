@@ -272,3 +272,12 @@ function transposeMatrix(arr){
 }
 console.log(transposeMatrix([[1,2,3],[4,5,6]]));
 
+//Check two strings are anagrams.
+
+function checkAnagramString(str1,str2){
+    let strArray = str1.split('');
+    const isAnagram = strArray.every(value=> str2.includes(value));
+    return isAnagram;
+}
+console.log(checkAnagramString('abcd','dcba'));
+
